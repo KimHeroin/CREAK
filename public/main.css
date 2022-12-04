@@ -10,8 +10,13 @@ tit{
     font-size: 50px;
     color: #ff46a3;
 }
-audio{
-    text-align: right;
-}
 
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index: -1;
+}
 /*# sourceMappingURL=main.css.map*/

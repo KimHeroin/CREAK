@@ -3,6 +3,7 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
+import { Mesh } from 'three'
 
 // Canvas
 const canvas = document.querySelector('canvas.webgl')
@@ -13,21 +14,22 @@ const scene = new THREE.Scene()
 /**
  * Models
  */
-const dracoLoader = new DRACOLoader()
-dracoLoader.setDecoderPath('/draco/')
-
-const gltfLoader = new GLTFLoader()
-gltfLoader.setDRACOLoader(dracoLoader)
-
-let mixer = null
-
-gltfLoader.load(
-    '/models/exporter.glb',
-    (gltf) =>
-    {
-        scene.add(gltf.scene)
-    }
-)
+ const dracoLoader = new DRACOLoader()
+ dracoLoader.setDecoderPath('/draco/')
+ 
+ const gltfLoader = new GLTFLoader()
+ gltfLoader.setDRACOLoader(dracoLoader)
+ 
+ let mixer = null
+ 
+ gltfLoader.load(
+     '/models/exporter.glb',
+     (gltf) =>
+     {
+         scene.add(gltf.scene)
+ 
+     }
+ )
 
 /**
  * Lights
@@ -97,28 +99,19 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
  * Animate
  */
 const clock = new THREE.Clock()
-let previousTime = 0
 
-const tick = () =>
-{
+ const tick = () =>
+ {
     const elapsedTime = clock.getElapsedTime()
-    const deltaTime = elapsedTime - previousTime
-    previousTime = elapsedTime
 
-    // Model animation
-    if(mixer)
-    {
-        mixer.update(deltaTime)
-    }
+    //model.rotation.y += elapsedTime
+    
 
-    // Update controls
-    controls.update()
-
-    // Render
-    renderer.render(scene, camera)
-
-    // Call tick again on the next frame
-    window.requestAnimationFrame(tick)
-}
-
-tick()
+     // Render
+     renderer.render(scene, camera)
+ 
+     // Call tick again on the next frame
+     window.requestAnimationFrame(tick)
+ }
+ 
+ tick()
