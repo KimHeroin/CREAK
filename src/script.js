@@ -27,6 +27,7 @@ const scene = new THREE.Scene()
      '/models/exporter.glb',
      (gltf) =>
      {
+
         model = gltf.scene;
          scene.add(model)
  
@@ -107,7 +108,11 @@ const clock = new THREE.Clock()
     const elapsedTime = clock.getElapsedTime()
 
     if (model){
-        model.rotation.y += 0.005
+        model.rotation.y += 0.002
+        model.rotation.x = 0
+        model.rotation.z = 0
+        model.position.set(0, -0.9, 0)
+        model.scale.set(0.5, 0.5, 0.5)
     }
 
     

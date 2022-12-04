@@ -76,7 +76,16 @@ module.exports = {
                 {
                     filename: 'assets/fonts/[hash][ext]'
                 }
-            }
+            },
+            
+            {
+                test: /.(png|svg|jpe?g|bin|gif|glb|gltf)$/,
+                loader: 'file-loader',
+                options: {
+                 esModule: false
+               }
+              }
+            
         ]
     }
 }
