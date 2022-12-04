@@ -79,15 +79,15 @@ module.exports = {
             },
 
             {
-                test: /.(png|svg|jpe?g|bin|gif|glb|gltf)$/,
+                test: /\.(png|svg|jpe?g|bin|gif|glb|gltf)$/,
                 loader: 'file-loader',
                 options: {
                  esModule: false
                }
               },
-              
+
               {
-                test: /.(gltf)$/,
+                test: /\.(gltf|glb)$/,
                 use: [
                   {
                     loader: "gltf-webpack-loader"
