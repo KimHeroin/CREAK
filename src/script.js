@@ -21,12 +21,14 @@ const scene = new THREE.Scene()
  gltfLoader.setDRACOLoader(dracoLoader)
  
  let mixer = null
+ let model;
  
  gltfLoader.load(
      '/models/exporter.glb',
      (gltf) =>
      {
-         scene.add(gltf.scene)
+        model = gltf.scene;
+         scene.add(model)
  
      }
  )
@@ -104,7 +106,10 @@ const clock = new THREE.Clock()
  {
     const elapsedTime = clock.getElapsedTime()
 
-    //model.rotation.y += elapsedTime
+    if (model){
+        model.rotation.y += 0.005
+    }
+
     
 
      // Render
