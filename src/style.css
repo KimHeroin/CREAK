@@ -4,6 +4,13 @@ sub1{
     font-weight: 600;
     background-color: white;
 }
+sub2{
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 500;
+    color: white;
+    width: 30%;
+}
 
 tit{
     font-family: 'Inconsolata', monospace;
@@ -11,6 +18,17 @@ tit{
     font-weight: 700;
     font-size: 50px;
     color: #ff46a3;
+    display: block;
+}
+tit2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #ff46a3;
+    display: block;
 }
 
 .webgl
