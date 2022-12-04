@@ -82,7 +82,7 @@ module.exports = {
                 test: /\.(png|svg|jpe?g|bin|gif|glb|gltf)$/,
                 loader: 'file-loader',
                 options: {
-                 esModule: false
+                 name:  'models/[name].[ext]'
                }
               },
 
