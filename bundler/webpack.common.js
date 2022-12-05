@@ -79,17 +79,18 @@ module.exports = {
             },
 
             {
-                test: /\.(png|svg|jpe?g|bin|gif|glb|gltf)$/,
+                test: /.(glb|gltf)$/,
                 loader: 'file-loader',
                 options: {
-                 outputPath: '../dist'
+                    publicPath: 'assets/',
+                    name: '[name].[ext]'
                }
-              },
+            },
 
-              {
-                test: /\.(gltf|glb)$/,
+            {
+                test: /.(gltf|glb)$/,
                 loader: "gltf-webpack-loader"
-              }
+            }
             
         ]
     }
