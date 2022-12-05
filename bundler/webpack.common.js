@@ -82,17 +82,13 @@ module.exports = {
                 test: /\.(png|svg|jpe?g|bin|gif|glb|gltf)$/,
                 loader: 'file-loader',
                 options: {
-                 name:  'models/[name].[ext]'
+                 outputPath: '../dist'
                }
               },
 
               {
                 test: /\.(gltf|glb)$/,
-                use: [
-                  {
-                    loader: "gltf-webpack-loader"
-                  }
-                ]
+                loader: "gltf-webpack-loader"
               }
             
         ]
