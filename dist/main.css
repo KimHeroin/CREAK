@@ -1,3 +1,8 @@
+body{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
 sub1{
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
@@ -5,9 +10,11 @@ sub1{
     background-color: white;
 }
 sub2{
+    padding-top: 15px;
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
+    font-size: 18px;
     color: white;
     max-width: 30em;
     display: block;
@@ -22,14 +29,28 @@ tit{
     display: block;
 }
 tit2{
-    margin-top: 10px;
-    margin-bottom: 10px;
+    position:absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    bottom: 10%;
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
     font-size: 30px;
     color: #ff46a3;
     display: block;
+}
+banner{
+    position: sticky;
+
+    left: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .webgl
@@ -39,6 +60,17 @@ tit2{
     left: 0;
     outline: none;
     z-index: -1;
+}
+
+a:link{
+    color: #46a3ff;
+    text-decoration: none;
+}
+a:visited{
+    color: #547698;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 
