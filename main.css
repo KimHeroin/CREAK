@@ -6,8 +6,17 @@ body{
 sub1{
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     background-color: white;
+
+}
+intvw{
+    position: relative;
+    top: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
 }
 sub2{
     padding-top: 15px;
@@ -15,9 +24,20 @@ sub2{
     font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    color: white;
+    color: black;
     max-width: 30em;
     display: block;
+}
+
+bottom{
+    position: absolute;
+    left: 70%;
+    right: 15px;
+    text-align: right;
+    bottom: 2%;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 tit{
@@ -41,10 +61,18 @@ tit2{
     color: #ff46a3;
     display: block;
 }
+audio{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+description{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+}
 banner{
     position: sticky;
-
-    left: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Inconsolata', monospace;
@@ -52,7 +80,9 @@ banner{
     font-weight: 400;
     font-size: 14px;
 }
-
+span{
+    background-color: white;
+}
 .webgl
 {
     position: fixed;
@@ -60,6 +90,7 @@ banner{
     left: 0;
     outline: none;
     z-index: -1;
+    
 }
 
 a:link{
@@ -67,7 +98,7 @@ a:link{
     text-decoration: none;
 }
 a:visited{
-    color: #547698;
+    color: #46a3ff;
 }
 a:hover{
     text-decoration: underline;
