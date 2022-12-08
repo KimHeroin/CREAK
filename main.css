@@ -7,6 +7,8 @@ sub1{
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 500;
+    font-size: 0.8em;
+    line-height: 0.4em;
     background-color: white;
 
 }
@@ -15,7 +17,7 @@ intvw{
     top: 20px;
     font-family: 'Inconsolata', monospace;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.8em;
     color: black;
 }
 sub2{
@@ -23,28 +25,29 @@ sub2{
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.7em;
     color: black;
-    max-width: 30em;
+    max-width: 20em;
     display: block;
 }
 
 bottom{
     position: absolute;
+    top: 95%;
     left: 70%;
     right: 15px;
     text-align: right;
-    bottom: 2%;
+    bottom: 0;
     font-family: 'Inconsolata', monospace;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.7em;
 }
 
 tit{
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3.5em;
     color: #ff46a3;
     display: block;
 }
@@ -53,13 +56,18 @@ tit2{
     padding-top: 10px;
     padding-bottom: 10px;
     
-    bottom: 10%;
+    bottom: 2%;
     font-family: 'Inconsolata', monospace;
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.5em;
     color: #ff46a3;
     display: block;
+}
+imgtit{
+    position: absolute;
+    top: 5px;
+    right: 20px;
 }
 audio{
     position: absolute;
@@ -67,6 +75,8 @@ audio{
     right: 20px;
 }
 description{
+    font-family: 'Inconsolata', monospace;
+    font-size: 0.8em;
     position: absolute;
     top: 80px;
     right: 30px;
